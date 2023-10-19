@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Home page</title>
+ <link rel="stylesheet" herf= "style.css">
+
+<body class="indexbody">
+    <header class="indexHeader"> 
+       <div class="log"> <img class="log" src="TippyLogo.jpg" alt="Tippy Coder logo" width="130" height="130"></div>
+       <h1 class="h1INDEX">Tippy Coder </h1>
+    </header>
+	
+	<main class="index" >
+
+  <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#Courses">Courses</a>
+  <a href="#Tutors">Tutors</a>
+  <a href="#Administrator">Administrator</a>
+    <a href="#Parent">Parent</a>
+</div>
+	
+	
+</main>
+ <hr>
+ <footer class="f2"> ©️2023</footer> 
