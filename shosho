@@ -2,7 +2,7 @@
 <html>
 <head>
  <title>Home page</title>
- <link rel="stylesheet" herf= "style.css">
+ <link rel="stylesheet" href= "style.css">
 </head>
 <body class="indexbody">
     <header class="indexHeader"> 
@@ -19,8 +19,14 @@
   <a href="#Administrator">Administrator</a>
     <a href="#Parent">Parent</a>
   </nav >
+
 	<div class="Courses" >
     <h1> Java</h1>
+    <span> programing lang</span>
+  </div>
+
+  <div class="Courses" >
+    <h1> Python</h1>
     <span> programing lang</span>
   </div>
 	
@@ -31,6 +37,6 @@
  <footer class="footer"> 
  <p> <em> ©2023 .All rights reserved </em> </p>
  </footer>
->>>>>>> Stashed changes
+
 </body>
 </html>
