@@ -3,7 +3,7 @@
 <head>
  <title>Home page</title>
  <link rel="stylesheet" herf= "style.css">
-
+</head>
 <body class="indexbody">
     <header class="indexHeader"> 
        <div class="log"> <img class="log" src="TippyLogo.jpg" alt="Tippy Coder logo" width="130" height="130"></div>
@@ -25,15 +25,12 @@
   </div>
 	
 </main>
-<<<<<<< Updated upstream
- <hr1234567890->
- <footer class="f2"> 
- ©️2023 tippy
- </footer> 
-=======
- <hr>
- <footer class=
- "footer"> 
+
+
+<hr>
+ <footer class="footer"> 
  <p> <em> ©2023 .All rights reserved </em> </p>
  </footer>
 >>>>>>> Stashed changes
+</body>
+</html>
