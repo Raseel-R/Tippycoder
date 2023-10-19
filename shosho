@@ -19,7 +19,7 @@
   <a href="#Administrator">Administrator</a>
     <a href="#Parent">Parent</a>
   </nav >
-	<div>Courses Title 
+	<div class="Courses" >
     <h1> Java</h1>
     <span> programing lang</span>
   </div>
