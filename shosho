@@ -35,6 +35,7 @@
 
 <hr>
  <footer class="footer"> 
+<<<<<<< Updated upstream
   <div class="Contact us ">
 <h2>Contact us </h2>
 <p> Tippy.Coder@outlook.com <br>
@@ -45,6 +46,20 @@
     <h2>About Us </h2>
     <p>I love you shosho </p> </div>
     
+=======
+
+  <div class="contact">
+  <h2>contact info </h2>
+   <p>Tippy.Coder@outlook.com<br>
+    +996534568905<br>
+    Tippy_Coder </p> </div>
+
+    <hr> 
+    <div class="About">
+    <h2>About Us </h2>
+   <p>I love you shosho </p> </div>
+
+>>>>>>> Stashed changes
  <p> <em> ©2023 .All rights reserved </em> </p>
  </footer>
 
