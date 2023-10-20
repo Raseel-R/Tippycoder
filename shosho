@@ -1,4 +1,4 @@
-<!DOCTYPE html> rrr
+<!DOCTYPE html> 
 <html>
 <head>
  <title>Home page</title>
@@ -35,6 +35,16 @@
 
 <hr>
  <footer class="footer"> 
+  <div class="Contact us ">
+<h2>Contact us </h2>
+<p> Tippy.Coder@outlook.com <br>
+  +99654738570 <br>
+  Tippy.Coder </p></div>
+   <hr> 
+   <div class="About Us  ">
+    <h2>About Us </h2>
+    <p>I love you shosho </p> </div>
+    
  <p> <em> ©2023 .All rights reserved </em> </p>
  </footer>
 
