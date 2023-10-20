@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <!DOCTYPE html> 
-<html> gggg
+<html>
+=======
+<!DOCTYPE html>
+<html>
+>>>>>>> c29583f9aecbd3ce2fe6bec6c3d6e169c4797a85
 <head>
  <title>Home page</title>
  <link rel="stylesheet" href= "style.css">
