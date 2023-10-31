@@ -1,30 +1,266 @@
-nav.topnav {
-  background-color: #262aa6;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-nav.topnav a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-nav.topnav a:hover {
-  background-color: #777;
-}
-
-.Courses {
-  width: 205px;
-  min-height: 114px;
-  border-radius: 11px;
-  box-shadow: 0 1px 9px 0 rgba(0,0,0,.1);
-  background-color: #e8ceb7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition:.3s ease-in all  ;
+body{
+  background: rgb(214,221,255);
+  background: radial-gradient(circle, rgba(214,221,255,1) 22%, rgba(62,120,213,1) 100%);
+        margin: 0;
+      padding: 0;
+  }
   
+  header {
+      top: 0;
+      left: 0;
+      width: 86%;
+      padding: 10px 98px;
+      background: rgba(255, 255, 255, .1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid rgba(255, 255, 255, .2);
+     overflow: hidden;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -17%;
+      width: 100%;
+      height: 100%;
+      transition: .5s;
+  }
+  header:hover::before {
+      left: 100%;
+  }
+  .logo {
+      color: #fff;
+      font-size: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: default;
+  }
+  .nav-list a {
+      color: #27005D;
+      font-size: 18px;
+      text-decoration: none;
+      margin-left: 35px;
+      transition: .3s;
+  }
+  .nav-list a:hover {
+      color: gray;
+  }
+
+.Courses h1{
+  font-size: 50px;
+text-align: center;
+color:#491c88;
+}
+
+.Card{
+  width: 250px ;
+    height: 330px;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px 0 #0d0c0c;
+    text-align: center ;
+    color:#E4F1FF;
+    justify-content: space-between;
+    background-color: #7483cd;
+    margin-left: 10px;
+    margin-right: 18px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 1.1em;
+  }
+ 
+  
+  
+  .Tlist .Card .image{
+  position: relative;
+  row-gap: 0;
+  top: -13px;
+    left: 0;
+    background-color: #491c88 ; 
+    border-radius: 20px 20px 0 0 ;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .Tlist {
+  max-height:1200px ;
+  max-width: 1600px ;
+  border: 2px  #ddd ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  overflow-x: auto;
+  font-family: Young Serif, serif;
+  font-size: 15px ;
+  line-height: 1.2em;
+  }
+
+  .checked {
+    color: orange;
+    position: relative;
+    bottom: 1px;
+    justify-items: center;
+  }
+
+.review{
+text-align: center;
+color:#ffffff;
+}
+
+.Reviwes h1{
+  font-size: 50px;
+text-align: center;
+color:#491c88;
+}
+.Reviwes{
+  padding: 20px 0;
+  color: #E4F1FF;
+  text-align: center;
+}
+.inner{
+  min-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex:33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 33.33%;
+}
+.Reviwe{
+  background-color:#5957a5;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+.Reviwe img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name-review{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.rating{
+  margin-bottom: 10px ;
+}
+
+
+.log{
+  padding-bottom: 6px;
+}
+
+footer {
+  background-color: #E4F1FF; 
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: medium;
+  margin-bottom: -30px;
+  text-indent: 2px; 
+  
+}
+.about{
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.container  h2{
+  font-weight: 900;
+  text-align: center;
+  font-style:oblique;
+}
+.about p {
+  text-align: center;
+  font-size: medium;
+}
+
+.Contact{
+  flex-grow: 1;
+  flex-basis: 100%;
+  text-indent: -3px;
+padding-left: -30px; 
+}
+
+.Contact .info{
+  position: relative;
+  text-align: justify;
+  margin-left: 70px;
+}
+.info li{
+display: flex ;
+  margin-bottom: 0px;
+  
+}
+.info li span:nth-child(1){
+  color:#27005D;
+  font-size:5px;
+  margin-right: 10px;
+
+}
+.info li span {
+  color: #27005D;
+  position: relative;
+  right:10px;
+  top:10px;
+}
+.Contact .info li a {
+  color: #27005D;
+  text-decoration: none;
+  text-align: center;
+}
+.Contact .info li p{
+  text-align:right;
+}
+.Contact .info li a:hover{
+  color: #27005D;
+}
+.copyright{
+  width: 100%;
+  background-color: #27005D;
+  padding:5px 0;
+  text-align: center;
+  color: white;
+  border: 0;
+}
+.about,
+.Contact {
+  flex-basis: calc(50% - 10px);
+  padding: 0 100px;
+}
+
+.about h2,
+.Contact h2 {
+  font-weight: 900;
+  text-align: center;
+  font-style: oblique;
+}
+
+.about p,
+.Contact .info {
+  text-align: center;
+  font-size: medium;
+}
+
+.Contact .info {
+  margin-left: 150px;
 }
