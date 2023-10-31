@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
-}
 
 header{
     background: linear-gradient(51deg, rgba(39,0,93,1) 12%, rgba(174,210,255,1) 67%, rgba(228,241,255,1) 91%);
@@ -81,7 +76,7 @@ header{
     overflow: hidden;
     transition: 0.8s;
     border-style: solid;
-    background-color: #aee4f3;
+    background-color: #8482d4;
     border-color: rgb(92, 146, 175);
     margin-bottom: 20px; 
   }
@@ -105,8 +100,9 @@ header{
   }
   
   .top .Cor-img {
-    width: 50px;
-    height: 50px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
   }
   
   .courseCard:hover > .top {
@@ -116,13 +112,13 @@ header{
   
   .bottom {
     box-sizing: border-box;
-    height: 1000px;
+    height: 400;
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     padding: 3%;
-    background: #9bc7f6;
+    background: #423662;
   }
   
   .bottom p {
