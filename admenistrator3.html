@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <style>
+    .children ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.children li {
+    display: inline-block; /* Set display to inline-block for horizontal layout */
+    margin-right: 20px; /* Add margin for spacing between list items */
+    text-align: center; /* Center-align text and photo */
+    text-align: center;
+}
+
+.child-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.child-photo {
+    width: 100px; /* Set the width and height for the photo */
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px; /* Add space between the photo and the name */
+    text-align: center;
+}
+
+.child-name {
+    font-size: 16px; /* Adjust the font size for the child's name */
+    margin-top: 10px; /* Add space between the photo and the name */
+    font-weight: bold;
+    text-align: center;
+}
+
+.BOY .child-photo {
+    background-image: url('kid1.png'); /* Specify the background image for boys */
+    text-align: center;
+}
+body{
+  background: rgb(214,221,255);
+background: radial-gradient(circle, rgba(214,221,255,1) 22%, rgba(62,120,213,1) 100%);
+}
+.GIRL .child-photo {
+    background-image: url('kid5.png'); /* Specify the background image for girls */
+    text-align: center;
+}
+
+.log{
+  padding-bottom: 6px;
+}
+
+footer {
+  background-color: #E4F1FF; 
+}
+
+.container{
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: medium;
+  margin-bottom: -30px;
+  text-indent: 2px; 
+  
+}
+.about{
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.container  h2{
+  font-weight: 900;
+  text-align: center;
+  font-style:oblique;
+}
+.about p {
+  text-align: center;
+  font-size: medium;
+}
+
+.Contact{
+  flex-grow: 1;
+  flex-basis: 100%;
+  text-indent: -3px;
+padding-left: -30px; 
+}
+
+.Contact .info{
+  position: relative;
+  text-align: justify;
+  margin-left: 70px;
+}
+.info li{
+display: flex ;
+  margin-bottom: 0px;
+  
+}
+.info li span:nth-child(1){
+  color:#27005D;
+  font-size:5px;
+  margin-right: 10px;
+
+}
+.info li span {
+  color: #27005D;
+  position: relative;
+  right:10px;
+  top:10px;
+}
+.Contact .info li a {
+  color: #27005D;
+  text-decoration: none;
+  text-align: center;
+}
+.Contact .info li p{
+  text-align:right;
+}
+.Contact .info li a:hover{
+  color: #27005D;
+}
+.copyright{
+  width: 100%;
+  background-color: #27005D;
+  padding:5px 0;
+  text-align: center;
+  color: white;
+  border: 0;
+}
+.about,
+.Contact {
+  flex-basis: calc(50% - 10px);
+  padding: 0 100px;
+}
+
+.about h2,
+.Contact h2 {
+  font-weight: 900;
+  text-align: center;
+  font-style: oblique;
+}
+
+.about p,
+.Contact .info {
+  text-align: center;
+  font-size: medium;
+}
+
+.Contact .info {
+  margin-left: 150px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 86%;
+    padding: 10px 98px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+   overflow: hidden;
+box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -17%;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+header:hover::before {
+    left: 100%;
+}
+.logo {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+.nav-list a {
+    color: #27005D;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+.nav-list a:hover {
+    color: gray;
+}
+.Tlist {
+max-height:1200px ;
+max-width: 1600px ;
+border: 2px  #ddd ;
+display: flex;
+display: grid;
+gap: var(--size-10);
+grid-auto-flow: column;
+overflow-x: auto;
+font-family: Young Serif, serif;
+font-size: 15px ;
+line-height: 1.2em;
+}
+.Tlist1 {
+max-height:1200px ;
+max-width: 1600px ;
+border: 1px  #ddd ;
+display: flex;
+display: grid;
+gap: var(--size-10);
+grid-auto-flow: column;
+overflow-x: auto;
+font-family: Young Serif, serif;
+font-size: 11px ;
+}
+.Tlist1 .Card1{
+width: 200px ;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 #0d0c0c;
+  text-align: center ;
+  justify-content: center;
+  background-color: #ffffff ;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.Tlist .Card{
+width: 250px ;
+  height: 340px;
+  border-radius: 15px;
+  box-shadow: 0 2px 3px 0 #0d0c0c;
+  text-align: center ;
+  justify-content: center;
+  background-color: #ffffff ;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  font-size: 90%;
+  line-height: 1.1em;
+}
+
+
+.Tlist .Card .image{
+position: relative;
+row-gap: 0;
+top: -13px;
+  left: 0;
+
+  background-color: #27005D; 
+  border-radius: 20px 20px 0 0 ;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+nav.topnav {
+    background-color: #E4F1FF;
+        overflow: auto;
+        white-space: nowrap;
+  
+}
+
+
+nav.topnav a {
+    display: inline-block;
+        color: #27005D;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        font-size: 17px;
+        justify-content: space-between;
+        padding: 20px 7.5% ;
+       
+}
+
+nav.topnav a:hover {
+    background-color: #777;
+}
+ul {
+  text-align: center;
+  justify-items: center;
+}
+.Card input[name ="More"]{
+  display: none;
+  
+}
+main h2{
+  text-align: center;
+  background-color: #27005D;
+  font-family: Young Serif, serif;
+  color: #ffffff;
+}
+.more-info {
+            display: none;
+        }
+
+        /* CSS to show the additional information when the checkbox is checked */
+        .more-checkbox:checked + .more-label + .more-info {
+            display: block;
+        }
+
+        /* Hide the checkbox */
+        .more-checkbox {
+            display: none;
+        }
+
+        /* Style for the "More" button label */
+        .more-label {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        h1{
+          text-align: center;
+        }
+       
+   </style>
+    <title>Administrator</title>
+    
+
+    <body>
+<main>
+ 
+  <header>
+    <div class="logo">
+       <img src="img/Tippy_Coder.png" alt="Tippy_Coder logo" width="100" height="100" ></div>
+     <img src="img/TippyCoder0000.png" alt="Tippy_Coder logo"  ></div>
+      <nav class="nav-list">
+    <strong>
+          <a class="active" href="#home">Home</a>
+ 
+          <a href="#Courses">Courses</a>
+      <a href="#Tutors">Tutors</a>
+          <a href="#Administrator">Administrator</a>
+              <a href="#Parent">Parent</a>
+        </strong>
+    </nav>
+     </header>
+        
+      
+       
+          <h1>Administrator</h1>
+    <h2> Registerd Kids </h2>
+ 
+<div class="children">
+   
+    <ul>
+        <li class="BOY">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Mohammed</div>
+            </div>
+        </li>
+        <li class="GIRL">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Nourah</div>
+            </div>
+        </li>
+        <li class="GIRL">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Yara</div>
+            </div>
+        </li>
+        <li class="BOY">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Saad</div>
+            </div>
+        </li>
+        <li class="GIRL">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Njood</div>
+            </div>
+        </li>
+        <li class="BOY">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Ali</div>
+            </div>
+        </li>
+        <li class="BOY">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Nasser</div>
+            </div>
+        </li>
+        <li class="GIRL">
+            <div class="child-info">
+                <div class="child-photo"></div>
+                <div class="child-name">Raghad</div>
+            </div>
+            <li class="GIRL">
+                <div class="child-info">
+                    <div class="child-photo"></div>
+                    <div class="child-name">Jood</div>
+                </div>
+                <li class="BOY">
+                    <div class="child-info">
+                        <div class="child-photo"></div>
+                        <div class="child-name">Abdullah</div>
+                    </div>
+    </ul>
+</div>
+<h2>Courses</h2>
+<div class="Card">
+    <div class="image"><span class="overlay"></span> </div>
+    <div class="Tlist">
+<div class="Card">
+   <div class="image"><span class="overlay"></span> <img src="img/C++.png" alt="C++" width="165" height="165"></div>
+  
+    <h4>instructor :Majd </h4>
+    <ul>
+     <li> Njood</li>
+      <li> Khalied </li>
+    </ul>
+</div>
+<div class="Card">
+  <div class="image"><span class="overlay"></span> <img src="img/Java.png" alt="java" width="165" height="165"></div>
+   
+ 
+   <h4>instructor : Sarah </h4>
+   <div>
+   <ul>
+      <li>Raseel</li>
+      <li>Abdullah</li>
+      <li>Jood</li>
+      <li> Mohammad </li>
+      <input type="checkbox" class="more-checkbox" id="moreCheckbox">
+    <label class="more-label" for="moreCheckbox"> More </label>
+    <div class="more-info" id="moreInfo">
+      <li> Yara </li>
+      <li> Khalied </li>
+   </ul>
+   </div>
+</div>
+
+  
+  <div class="Card">
+    <div class="image"><span class="overlay"></span> <img src="img/PHP.png" alt="PHP" width="165" height="165"></div>
+     
+     <h4>instructor : Raghad</h4>
+     <ul>
+        <li> Yara </li>
+         <li> Mohammad </li>
+     </ul>
+ </div>
+ <div class="Card">
+<div class="image"><span class="overlay"></span> <img src="img/programing.png" alt="Robotics" width="165" height="165"></div>
+ 
+ <h4>instructor : Mona</h4>
+ <ul>
+      <li> Jood </li>
+      <li> Khalied </li>
+      <li> Nasser </li>
+ </ul>
+</div>
+ <div class="Card">
+    <div class="image"><span class="overlay"></span> <img src="img/Ruby.png" alt="Ruby" width="165" height="165"></div>
+     
+     <h4>instructor :  Noha </h4>
+     <ul>
+       <li> Nourah</li>
+       <li> Abdullah </li>
+       <li> Ali </li>
+     </ul>
+ </div>
+
+ <div class="Card">
+  <div class="image"><span class="overlay"></span> <img src="img/Scratch.png" alt="Scratch" width="165" height="165"></div>
+   
+   <h4>instructor : Shahad </h4>
+   <ul>
+      <li>Mohammad</li>
+      <li> Khalied </li>
+      <li> Nasser </li>
+      <li> Raseel </li>
+   </ul>
+  </div>
+
+ <div class="Card">
+    <div class="image"><span class="overlay"></span> <img src="img/Python2.png" alt="Python" width="165" height="165"></div>
+     
+     <h4>instructor : Sarah</h4>
+     <ul>
+      <li> Jood </li>
+       <li> Khalied </li>
+     </ul>
+ </div>
+ 
+ <div class="Card">
+    <div class="image"><span class="overlay"></span> <img src="img/HTML.png" alt="HTML" width="165" height="165"></div>
+     
+     <h4>instructor : Amal , Shadan</h4>
+     <ul>
+        <li> Njood </li>
+        <li> Yara </li>
+        <li> Raghad </li>
+     </ul>
+     
+ </div>
+ <div class="Card">
+  <div class="image"><span class="overlay"></span> <img src="img/JavaScript.png" alt="JavaScript  " width="165" height="165"></div>
+   
+   <h4>instructor : Amal</h4>
+   <ul>
+       <li> Njood </li>
+        <li> Yara </li>
+        <li> Raghad </li>
+   </ul>
+   
+</div>
+    </div>
+
+    </div>
+    <h2>tutors</h2>
+    <div class="Card1">
+        <div class="image"><span class="overlay"></span> </div>
+        <div class="Tlist1">
+    <div class="Card1">
+       <div class="image"><span class="overlay"></span> <img src="img/kid2.png" alt="Dalal" width="130" height="130"></div>
+       <a href = "حطي لنك السكيجوال"> <h3>Amal</h3> </a>
+        <ul>
+         <li> JavaScript</li>
+          <li> HTML </li>
+        </ul>
+    </div>
+    <div class="Card1">
+        <div class="image"><span class="overlay"></span> <img src="img/kid3.png" alt="Tala " width="130" height="130"></div>
+        <a href = "حطي لنك السكيجوال"> <h3> Sarah </h3> </a>
+         <ul>
+          <li> java</li>
+            <li>Python </li>
+    
+         </ul>
+     </div>
+     <div class="Card1">
+        <div class="image"><span class="overlay"></span> <img src="img/woman1.png" alt="Nada" width="130" height="130"></div>
+        <a href = "حطي لنك السكيجوال"><h3> Noha</h3></a>
+         <ul>
+          <li> Ruby</li>
+         </ul>
+     </div>
+     <div class="Card1">
+    <div class="image"><span class="overlay"></span> <img src="img/kid4.png" alt="Abdulaziz" width="130" height="130"></div>
+     <a href = "حطي لنك السكيجوال"><h3> Raghad</h3></a>
+     <ul>
+      <li>SQL</li>
+    
+     </ul>
+    </div>
+    
+     <div class="Card1">
+      <div class="image"><span class="overlay"></span> <img src="img/kid2.png" alt="Asmaa" width="130" height="130"></div>
+      <a href = "حطي لنك السكيجوال"><h3> Majd</h3></a>
+       <ul>
+        <li> C++ </li>
+       </ul>
+   </div>
+   <div class="Card1">
+    <div class="image"><span class="overlay"></span> <img src="img/kid3.png" width="130" height="130"></div>
+    <a href = "حطي لنك السكيجوال"><h3>  Shahad </h3></a>
+     <ul>
+         <li> Scratch</li>
+     </ul>
+ </div>
+ <div class="Card1">
+  <div class="image"><span class="overlay"></span> <img src="img/woman1.png" alt=" Ahmad" width="130" height="130"></div>
+  <a href = "حطي لنك السكيجوال"><h3>  Mona </h3></a>
+   <ul>
+       <li>Robotics</li>
+   </ul>
+        </div>
+        <div class="Card1">
+          <div class="image"><span class="overlay"></span> <img src="img/woman6.png" alt=" Ahmad" width="130" height="130"></div>
+          <a href = "حطي لنك السكيجوال"><h3>  Shadan </h3></a>
+           <ul>
+               <li>HTML</li>
+           </ul>
+                </div>
+    </div>
+    </div> 
+</main>
+<footer>
+  <section class="container">
+   <div class="about"> <h2>About Us</h2>
+    <p>At Tippy Coder, our dedicated team is committed to making programming education accessible<br> and enjoyable for young kids. We have developed a user-friendly platform designed to cater<br> to the unique needs of both parents and children.</p></div>
+
+
+
+   <div class="Contact"> 
+        <h2>Contact Us</h2>
+    <ul class="info">
+
+      <li><span><i style="font-size:22px" class="fa">&#xf098;</i></span>
+        <p><a href="+996534365470">+9965343365470</a></p> </li>
+
+      <li><span><i style="font-size:22px" class="fa">&#xf0e0;</i></span>
+      <p><a href="Tippy_Coder@outlook.com">Tippy_Coder@outlook.com</a></p></li>
+
+      <li><span><i style="font-size:22px" class="fa">&#xf16d;</i></span>
+      <p><a href="Tippy.Coder100">Tippy.Coder100</a></p></li>
+     </ul>
+    </div>
+  
+  </section>
+
+  <section class="copyright">
+  <div class="copyright">
+    <p> <em> ©2023 .All rights reserved </em> </p></div>
+  </section>
+</footer>
+</body>
+  </html>
